@@ -10,7 +10,7 @@
 		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<script src="https://cdn.tailwindcss.com"></script>
-	<title>E-Enterer</title>
+	<title>Modern House</title>
 </head>
 
 <body>
@@ -18,16 +18,27 @@
 		<main class="flex w-full">
 			<aside class="w-[22.5%] border-r h-[100vh] overflow-auto">
 				<div class="pt-2 px-2">
-					<div class="w-full bg-white sticky pt-3 pb-3 top-0">
-						<h2 class="text-center text-3xl mb-4">Color Palettes</h2>
-						<div class="w-full flex justify-between px-5">
-							<button class="color-navigation">Generate color</button>
-							<button>Palettes</button>
+					<div class="w-full bg-white sticky pt-3 pb-3 top-0 border-b">
+						<h2 class="text-center text-3xl mb-8">Color Palettes</h2>
+						<div class="w-full flex justify-between items-center">
+							<button class="color-navigation active first"><i class="fa-solid fa-circle-plus"></i> Generate color</button>
+							<span class="w-[1px] h-[20px] bg-[#d6d4e0]"></span>
+							<button class="color-navigation second"><i class="fa-solid fa-palette"></i> Palettes</button>
 						</div>
 					</div>
 					<div>
-						<div></div>
-						<ul class="w-full flex justify-between flex-wrap mt-9">
+						<div class="flex flex-col items-center set-color">
+							<div class="flex justify-center items-center relative mt-9 mb-5">
+								<input type="color" class="my-color w-[15.5rem] h-[3rem] cursor-pointer opacity-0 absolute" name="color">
+								<button class="flex justify-between items-center border-2 border-[#5b9aa0] rounded-lg px-3 py-2">
+									<img src="./img/palette.png" class="w-[30px]" alt="Palette">
+									<span class="ml-2 text-lg text-[#5b9aa0]">Choose your own color</span>
+								</button>
+							</div>
+							<div class="w-[15.5rem] h-[10rem] setting-color border rounded"></div>
+							<button class="px-3 py-2 bg-[#5b9aa0] rounded-3xl text-white mt-4 submit">Submit</button>
+						</div>
+						<ul class="w-full hidden justify-between polette flex-wrap mt-5">
 							<li class="w-[48%] mb-3">
 								<div class="w-full h-[40px] bg-[#6b5b95] rounded-tr-md rounded-tl-md"></div>
 								<div class="w-full h-[40px] bg-[#feb236]"></div>
@@ -220,7 +231,9 @@
 				</header>
 				<div></div>
 			</section>
-			<aside class="w-[22.5%]">dsfsdfdsfsfsfsf</aside>
+			<aside class="w-[22.5%]">
+				
+			</aside>
 		</main>
 	</div>
 
