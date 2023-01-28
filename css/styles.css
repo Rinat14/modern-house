@@ -44,5 +44,8 @@
 }
 
 .color-navigation {
-	
+	border-radius: 30px;
+	padding: 5px 12px;
+	transition: all 0.2s ease-in-out;
+	border: 1px solid #5b999f;
 }
