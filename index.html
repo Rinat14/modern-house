@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>E-Enterer</title>
+</head>
+
+<body>
+	<div class="wrapper" id="app">
+		<main class="flex w-full">
+			<aside class="w-[22.5%] border-r h-[100vh] overflow-auto">
+				<div class="pt-2 px-2">
+					<div class="w-full bg-white sticky pt-3 pb-3 top-0">
+						<h2 class="text-center text-3xl mb-4">Color Palettes</h2>
+						<div class="w-full flex justify-between px-3">
+							<button class="color-navigation">Generate color</button>
+							<button>Palettes</button>
+						</div>
+					</div>
+					<div>
+						<div></div>
+						<ul class="w-full flex justify-between flex-wrap mt-9">
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#6b5b95] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#feb236]"></div>
+								<div class="w-full h-[40px] bg-[#d64161]"></div>
+								<div class="w-full h-[40px] bg-[#ff7b25] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#a2b9bc] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#b2ad7f]"></div>
+								<div class="w-full h-[40px] bg-[#878f99]"></div>
+								<div class="w-full h-[40px] bg-[#6b5b95] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#d5e1df] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#e3eaa7]"></div>
+								<div class="w-full h-[40px] bg-[#b5e7a0]"></div>
+								<div class="w-full h-[40px] bg-[#86af49] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#d6cbd3] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#eca1a6]"></div>
+								<div class="w-full h-[40px] bg-[#bdcebe]"></div>
+								<div class="w-full h-[40px] bg-[#ada397] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#6b5b95] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#feb236]"></div>
+								<div class="w-full h-[40px] bg-[#d64161]"></div>
+								<div class="w-full h-[40px] bg-[#ff7b25] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#a2b9bc] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#b2ad7f]"></div>
+								<div class="w-full h-[40px] bg-[#878f99]"></div>
+								<div class="w-full h-[40px] bg-[#6b5b95] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#d5e1df] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#e3eaa7]"></div>
+								<div class="w-full h-[40px] bg-[#b5e7a0]"></div>
+								<div class="w-full h-[40px] bg-[#86af49] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#d6cbd3] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#eca1a6]"></div>
+								<div class="w-full h-[40px] bg-[#bdcebe]"></div>
+								<div class="w-full h-[40px] bg-[#ada397] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#6b5b95] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#feb236]"></div>
+								<div class="w-full h-[40px] bg-[#d64161]"></div>
+								<div class="w-full h-[40px] bg-[#ff7b25] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#a2b9bc] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#b2ad7f]"></div>
+								<div class="w-full h-[40px] bg-[#878f99]"></div>
+								<div class="w-full h-[40px] bg-[#6b5b95] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#d5e1df] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#e3eaa7]"></div>
+								<div class="w-full h-[40px] bg-[#b5e7a0]"></div>
+								<div class="w-full h-[40px] bg-[#86af49] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#d6cbd3] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#eca1a6]"></div>
+								<div class="w-full h-[40px] bg-[#bdcebe]"></div>
+								<div class="w-full h-[40px] bg-[#ada397] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#6b5b95] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#feb236]"></div>
+								<div class="w-full h-[40px] bg-[#d64161]"></div>
+								<div class="w-full h-[40px] bg-[#ff7b25] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#a2b9bc] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#b2ad7f]"></div>
+								<div class="w-full h-[40px] bg-[#878f99]"></div>
+								<div class="w-full h-[40px] bg-[#6b5b95] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#d5e1df] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#e3eaa7]"></div>
+								<div class="w-full h-[40px] bg-[#b5e7a0]"></div>
+								<div class="w-full h-[40px] bg-[#86af49] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#d6cbd3] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#eca1a6]"></div>
+								<div class="w-full h-[40px] bg-[#bdcebe]"></div>
+								<div class="w-full h-[40px] bg-[#ada397] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#6b5b95] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#feb236]"></div>
+								<div class="w-full h-[40px] bg-[#d64161]"></div>
+								<div class="w-full h-[40px] bg-[#ff7b25] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#a2b9bc] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#b2ad7f]"></div>
+								<div class="w-full h-[40px] bg-[#878f99]"></div>
+								<div class="w-full h-[40px] bg-[#6b5b95] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#d5e1df] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#e3eaa7]"></div>
+								<div class="w-full h-[40px] bg-[#b5e7a0]"></div>
+								<div class="w-full h-[40px] bg-[#86af49] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#d6cbd3] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#eca1a6]"></div>
+								<div class="w-full h-[40px] bg-[#bdcebe]"></div>
+								<div class="w-full h-[40px] bg-[#ada397] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#6b5b95] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#feb236]"></div>
+								<div class="w-full h-[40px] bg-[#d64161]"></div>
+								<div class="w-full h-[40px] bg-[#ff7b25] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#a2b9bc] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#b2ad7f]"></div>
+								<div class="w-full h-[40px] bg-[#878f99]"></div>
+								<div class="w-full h-[40px] bg-[#6b5b95] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#d5e1df] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#e3eaa7]"></div>
+								<div class="w-full h-[40px] bg-[#b5e7a0]"></div>
+								<div class="w-full h-[40px] bg-[#86af49] rounded-br-md rounded-bl-md"></div>
+							</li>
+							<li class="w-[48%] mb-3">
+								<div class="w-full h-[40px] bg-[#d6cbd3] rounded-tr-md rounded-tl-md"></div>
+								<div class="w-full h-[40px] bg-[#eca1a6]"></div>
+								<div class="w-full h-[40px] bg-[#bdcebe]"></div>
+								<div class="w-full h-[40px] bg-[#ada397] rounded-br-md rounded-bl-md"></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<section class="w-[55%]">
+				<header class="pt-7 border-b">
+					<nav class="pb-5 px-3">
+						<ul class="flex justify-between items-center">
+							<li class="text-[17px]">
+								<button class="toolbar-btns">
+									<i class="mr-2 fa-solid fa-sliders"></i> Set Pattern
+								</button>
+							</li>
+							<span class="w-[1px] h-[20px] bg-[#d6d4e0]"></span>
+							<li class="text-[17px]">
+								<button class="toolbar-btns">
+									<i class="mr-2 fa-solid fa-paint-roller"></i> Change color
+								</button>
+							</li>
+							<span class="w-[1px] h-[20px] bg-[#d6d4e0]"></span>
+							<li class="text-[17px]">
+								<button class="toolbar-btns">
+									<i class="mr-2 fa-solid fa-quote-left"></i> Add text
+								</button>
+							</li>
+							<span class="w-[1px] h-[20px] bg-[#d6d4e0]"></span>
+							<li class="text-[17px]">
+								<button class="toolbar-btns">
+									<i class="mr-2 fa-solid fa-copy"></i> Copy
+								</button>
+							</li>
+							<span class="w-[1px] h-[20px] bg-[#d6d4e0]"></span>
+							<li class="text-[17px]">
+								<button class="toolbar-btns">
+									<i class="mr-2 fa-solid fa-clipboard-list"></i> Insert
+								</button>
+							</li>
+							<span class="w-[1px] h-[20px] bg-[#d6d4e0]"></span>
+							<li class="text-[17px]">
+								<button class="toolbar-btns">
+									<i class="mr-2 fa-solid fa-trash"></i> Delete
+								</button>
+							</li>
+						</ul>
+					</nav>
+				</header>
+				<div></div>
+			</section>
+			<aside class="w-[22.5%]">dsfsdfdsfsfsfsf</aside>
+		</main>
+	</div>
+
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
